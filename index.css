@@ -1,0 +1,51 @@
+.pa{
+    width: 100%;
+    background-color : black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "one two two three"
+    "one four five six"
+    "one seven eight six"    
+    ;
+}
+.one{
+    background-color: aqua;
+    grid-area: one;
+
+
+}
+.two{
+    background-color: blue;
+    grid-area: two;
+
+
+}
+.three{
+    background-color: blueviolet;
+    grid-area: three;
+
+}
+.four{
+    background-color: brown;
+    grid-area: four;
+}
+.five{
+    background-color: chartreuse;
+    grid-area: five;
+}
+.six{
+    background-color: chocolate;
+    grid-row: span 2;
+    grid-area: six;
+}
+.seven{
+    background-color:salmon;
+    grid-area: seven;
+}
+.eight{
+    background-color: yellow;
+    grid-area: eight;
+}
